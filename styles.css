@@ -1,7 +1,30 @@
+@font-face {
+  font-family: "vintageGlamour";
+  src: url("assets/VintageGlamourItalic.ttf")  format("truetype");
+}
+@font-face {
+  font-family: "greyCliff";
+  src: url("assets/greycliff-extrabold.otf")  format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "greyCliff";
+  src: url("assets/greycliff-semiboldoblique.otf")  format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "greyCliff";
+  src: url("assets/greycliff-semibold.otf")  format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     background-color: #edebe2;
     margin: 0px;
-    font-family: 'Readex Pro', sans-serif !important;
+    font-family: "greyCliff";
+    font-weight: normal;
     letter-spacing: clamp(-0.2rem, -1vw, -1rem);
   }
   
@@ -25,8 +48,21 @@ body {
     transition: letter-spacing 1s ease;
   }
 
+  h1:hover {
+    letter-spacing: 0.5rem !important;
+  }
+
   span {
     color: #1f1e1e !important;
+    font-family: "vintageGlamour";
+    font-style: normal;
+  }
+
+  svg {
+    position: absolute;
+    fill: red;
+    z-index: 5;
+    opacity: 1;
   }
   
   #menu-items {
@@ -92,9 +128,25 @@ body {
     display: block;
     font-size: clamp(1rem, 4vw, 4rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    text-decoration: none;
     transition: opacity 400ms ease;
+    
+    background: linear-gradient(to right, rgba(100, 200, 200, 0), rgba(100, 200, 200, 0)),
+    linear-gradient(to right, #6961ed, #443ae8, #362eba);;
+    background-size: 100% 0.1em, 0 0.1em;
+  background-position: 85% 85%, 0 85%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms, letter-spacing 0.8s ease;;
   }
+
+  .menu-item:hover,
+.menu-item:focus {
+  letter-spacing: 0.2rem;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+/* .menu-item:hover span {
+  letter-spacing: 0.35rem;
+} */
   
   :root {  
     --purple: #6961ed;
@@ -141,6 +193,8 @@ body {
       var(--pink),
       var(--purple)
     );
+    font-family: "greyCliff";
+    text-align: right;
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
