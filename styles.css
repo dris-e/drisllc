@@ -112,7 +112,7 @@ body {
     z-index: 0;
   }
   
-  #menu-items:hover ~ #menu-background-pattern {
+  #menu-items:hover ~ #menu-background-pattern, #menu-items:focus ~ #menu-background-pattern {
     background-size: 11vmin 11vmin !important;
     opacity: 0.3;
   }
