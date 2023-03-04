@@ -26,6 +26,7 @@ body {
     font-family: "greyCliff";
     font-weight: normal;
     letter-spacing: clamp(-0.2rem, -1vw, -1rem);
+    z-index: -1;
   }
   
   #menu {  
@@ -36,16 +37,18 @@ body {
     text-align: left;
   }
 
-  #menu h1, #menu #menu-items {
+ #menu #menu-items {
     padding: 0rem clamp(3rem, 5vw, 7rem);
   }
 
   h1 {
     font-size: clamp(3rem, 8vw, 8rem);
+    padding: 0rem clamp(3rem, 5vw, 7rem);
     color: #443ae8;
+    opacity: 0;
     z-index: 2;
     letter-spacing: -3rem;
-    transition: letter-spacing 1s ease;
+    transition: letter-spacing 1s ease, opacity 200ms ease;
   }
 
   h1:hover {
@@ -93,7 +96,7 @@ body {
   #menu-background-pattern {
     background-image: radial-gradient(
       #443ae8 9%, 
-      transparent 9%
+      transparent 5%
     );
     background-position: 0% 0%;
     background-size: 0vmin 0vmin;
@@ -101,12 +104,12 @@ body {
     left: 0px;
     position: absolute;
     top: 0px;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 800ms ease, 
       background-size 800ms ease,
       background-position 800ms ease;
     width: 100vw;
-    z-index: 1;
+    z-index: 0;
   }
   
   #menu-items:hover ~ #menu-background-pattern {
@@ -149,7 +152,7 @@ body {
 } */
   
   :root {  
-    --purple: #6961ed;
+    --purple: #8f89f1;
     --violet: #443ae8;
     --pink: #362eba;
   }
@@ -200,18 +203,32 @@ body {
     white-space: nowrap;
   }
 
-#logo {
+  #menu-background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, rgba(237, 235, 226, 0), rgba(237, 235, 226, 0.95));
+    z-index: 1;
+  }
 
-  position: absolute !important;
-  top: 0;
-  margin-right: auto;
+  #page-transition {
+    position: relative;
+    background-color:#edebe2;
+    /* #1f1e1e */
+    z-index: 3;
+    height: 100vh;
+    width: 0vw;
+    transition: width 1.2s ease;
+  }
+
+#logo {
   height: clamp(1.5rem, 6vw, 6rem);
+  padding: 0rem clamp(3rem, 5vw, 7rem);
   transition: transform 0.7s ease, scale 0.5s ease;
   z-index: 2;
 
 }
 
 #logo:hover {
-  scale: 1.3;
   transform: rotate(390deg);
 }
