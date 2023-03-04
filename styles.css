@@ -194,7 +194,6 @@ body {
       var(--purple)
     );
     font-family: "greyCliff";
-    text-align: right;
     background-size: 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

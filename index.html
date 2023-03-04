@@ -18,7 +18,18 @@
       window.onload=function() {
           document.querySelector("h1").style.letterSpacing = "-0.25rem";
           setTimeout(function(){document.getElementById("menu-items").style.opacity = "1"; document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";}, 1000);
-      };
+        
+          var menu = document.getElementById("menu");
+
+          Array.from(document.getElementsByClassName("menu-item"))
+          .forEach((item, index) => {
+            item.onmouseover = () => {
+              menu.dataset.activeIndex = index;
+            }
+          })
+        };
+
+
   </script>
 </head>
 <body>
