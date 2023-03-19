@@ -116,6 +116,19 @@ body {
     background-size: 11vmin 11vmin !important;
     opacity: 0.3;
   }
+
+  /* #menu-items:hover ~ #page-transition {
+    width: 20vw;
+  }
+
+  #menu-items:hover ~ #page-transition h2 {
+    opacity: 1 !important;
+  } */
+
+  h2 {
+    transition: all 800ms ease;
+    margin: auto;
+  }
   
   #menu-items:hover > .menu-item {
     opacity: 0.2;
