@@ -1,76 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/DRIS-LLC-ICON.png">
-    <title>dris LLC | Home</title>
-    <meta name="description" content="The official site of dris LLC, created by Dris Elamri. dris LLC is a rapidly-growing e-commerce company aimed at revolutionizing the online selling industry. Through the leveraging of unique strategies and business plans, under Dris Elamri's guidance, dris LLC has seen massive success.">
-    <meta name="keywords" content="dris, elamri, dris elamri, llc, drisllc, minnesota, dris llc">
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <meta name="author" content="Dris Elamri">
-    <link rel="canonical" href="https://www.dris.llc/" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="dris LLC | Home" />
-<meta property="og:description" content="The official site of dris LLC, created by Dris Elamri. dris LLC is a rapidly-growing e-commerce company aimed at revolutionizing the online selling industry. Through the leveraging of unique strategies and business plans, under Dris Elamri's guidance, dris LLC has seen massive success." />
-<meta property="og:url" content="https://www.dris.llc/" />
-<meta property="og:site_name" content="dris LLC" />
-<meta property="og:image" content="assets/DRIS-LLC-LOGO.png" />
-<meta property="og:image:width" content="769" />
-<meta property="og:image:height" content="769" />
-<meta property="og:image:alt" content="dris LLC logo, created by Dris Elamri. https://dris.one, Instagram: @drisllc" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="dris LLC | Home" />
-<meta name="twitter:description" content="The official site of dris LLC, created by Dris Elamri. dris LLC is a rapidly-growing e-commerce company aimed at revolutionizing the online selling industry. Through the leveraging of unique strategies and business plans, under Dris Elamri's guidance, dris LLC has seen massive success." />
-<meta name="twitter:site" content="@driselamri" />
-<meta name="twitter:creator" content="@driselamri" />
-<meta name="twitter:image" content="assets/DRIS-LLC-LOGO.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="main.js"></script>
-    <script>
-      window.onload=function() {
-          document.querySelector("h1").style.letterSpacing = "-0.22rem"; document.querySelector("h1").style.opacity = "1";
-          setTimeout(function(){document.getElementById("menu-items").style.opacity = "1"; document.getElementById("menu-background-pattern").style.backgroundSize = "12vmin 12vmin";}, 1000);
-        
-          var menu = document.getElementById("menu");
-          var menuItems = document.getElementsByClassName("menu-item");
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/DRIS-LLC-FAVICON-ALT.png" />
+    <title>dris LLC - Creative Agency & Brand Development</title>
+    <meta
+      name="description"
+      content="dris LLC: We're not just another creative agency. We're the idea-to-empire builders, the brand whisperers, and the market disruptors. Led by visionary Dris Elamri, we've racked up 80M+ impressions across brands. Ready to make your mark?" />
+    <meta
+      name="keywords"
+      content="dris LLC, brand development, creative agency, Dris Elamri, marketing campaigns, product development, startup branding, business growth" />
+    <meta name="author" content="dris LLC" />
 
-          Array.from(menuItems)
-          .forEach((item, index) => {
-            item.onmouseover = () => {
-              menu.dataset.activeIndex = index;
-            }
-          })
-        };
+    <!-- meta / facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dris.llc/" />
+    <meta property="og:title" content="dris LLC - Creative Agency & Brand Development" />
+    <meta
+      property="og:description"
+      content="Collaborate with dris LLC, the powerhouse behind 80M+ brand impressions. We're turning startups into success stories and ideas into industry leaders. Dive into a world where creativity meets strategy, led by entrepreneur extraordinaire Dris Elamri." />
+    <meta property="og:image" content="https://dris.llc/assets/DRIS-LLC-LOGO-FULL-ALT.png" />
 
-        function switchPage(page) {
-          document.getElementById("page-transition").style.position = "absolute";
-          document.getElementById("page-transition").style.width = "100vw";
-          
-          console.log(page);
-          setTimeout(function(){window.location.href = page}, 1300);
-        };
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://dris.llc/" />
+    <meta property="twitter:title" content=" - Creative Agency & Brand Development" />
+    <meta
+      property="twitter:description"
+      content="Step into dris LLC: Where data drives creativity, ideas become empires, and brands leave lasting impressions. With 80M+ online hits and a genius team led by Dris Elamri, we're not just playing the game - we're changing it." />
+    <meta property="twitter:image" content="https://dris.llc/assets/DRIS-LLC-LOGO-FULL-ALT.png" />
 
+    <link rel="canonical" href="https://dris.llc/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#edebe2" />
+    <meta name="geo.region" content="US-MN" />
+    <meta name="geo.placename" content="Minnesota" />
 
-  </script>
-</head>
-<body>
-    <div id="menu">
-        <div id="menu-items">
-          <div class="menu-item" onclick="switchPage('about')">Abo<span>ut</span></div>
-          <div class="menu-item" onclick="switchPage('projects')">Projec<span>ts</span></div>
-          <div class="menu-item" onclick="switchPage('contact')">Cont<span>act</span></div>
-        </div>
-        <div id="page-transition">
-          <!-- <h2 style="opacity: 0;">About</h2> -->
-        </div>
-        <h1 onclick="switchPage('index')"><span class="magic-text">dris</span><span>LLC</span></h1>
-        <!-- <img src="assets/DRIS-LLC-ICON.png" id="logo"></img> -->
-        <div id="menu-background"></div>
-        <div id="menu-background-pattern"></div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "dris LLC",
+        "url": "https://dris.llc",
+        "logo": "https://dris.llc/assets/DRIS-LLC-LOGO-FULL.png",
+        "description": "A dynamic, data-driven creative agency turning innovative ideas into thriving businesses, led by visionary entrepreneur Dris Elamri.",
+        "founder": {
+          "@type": "Person",
+          "name": "Dris Elamri"
+        },
+        "sameAs": ["https://www.linkedin.com/company/drisllc", "https://www.instagram.com/drisllc"]
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="flex full start">
+    <!-- <div class="background slide switch transition absolute"></div> -->
+    <header class="flex full row start absolute">
+      <!-- <a href="/" class="flex row gap dris hidden transition"> -->
+      <a href="/" class="flex row gap dris">
+        <img class="logo" src="assets/DRIS-LLC-ICON.png" alt="dris LLC logo" />
+        <h1 class="light">dris LLC.</h1>
+      </a>
+    </header>
+    <div class="flex gaps content full">
+      <h2 class="secondary left full">welcome to dris LLC:</h2>
+      <p class="light left">
+        We're a dynamic, data-driven creative agency that turns innovative ideas into thriving businesses. We're not just about pretty logos or viral
+        social media videos—we're about creating brands that make an impact. From concept to execution, we've got you covered.
+      </p>
+      <p class="light left">
+        We specialize in full brand creation, app and product development, killer marketing campaigns, and the business knowledge to get your company
+        off the ground. We're focused on turning <span class="italic">"what if"</span> into <span class="italic">"what's next."</span>
+      </p>
+      <p class="light left full underlined">But don't just take our word for it.</p>
+      <p class="light left">
+        With over 80 million online impressions across nearly a dozen brands and hundreds of thousands in sales, we've got the track record to back us
+        up. Led by seasoned entrepreneur <a href="https://dris.one" target="_blank" class="underlined">Dris Elamri</a> and a team of industry experts,
+        we bring a unique blend of innovation and experience to every project. Whether you're a startup looking to make your mark or an established
+        brand aiming for a refresh, dris LLC is here to help you stand out in a crowded market and build a business that lasts.
+      </p>
+      <div class="flex row between wrap tops menu">
+        <a href="our-story" class="secondary underline link"> our story </a>
+        <a href="case-studies" class="secondary underline link"> case studies </a>
+        <a href="contact" class="secondary underline link"> contact us </a>
       </div>
-</body>
+    </div>
+    <div class="background cover transition absolute"></div>
+    <div class="background grid transition absolute"></div>
+  </body>
+  <script type="text/javascript">
+    // const slide = document.querySelector(".background.slide");
+    // const dris = document.querySelector(".dris");
+
+    // onload = () => {
+    //   slide.classList.remove("switch");
+    //   dris.classList.remove("hidden");
+    // }
+
+    // const hyperlinks = document.querySelectorAll("a");
+
+    // hyperlinks.forEach(link => {
+    //   link.onclick = (e) => {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+
+    //     slide.classList.add("switch");
+    //     dris.classList.add("hidden");
+
+    //     setTimeout(() => {
+    //       window.location.href = link.href;
+    //     }, 1000);
+    //   }
+    // });
+
+    const link = document.querySelectorAll(".link");
+    const background = document.querySelector(".background.grid");
+
+    link.forEach((item, i) => {
+      item.onmouseover = () => {
+        background.dataset.active = i;
+      };
+    });
+  </script>
 </html>
