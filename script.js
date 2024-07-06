@@ -28,7 +28,7 @@ hyperlinks.forEach((link) => {
 
     setTimeout(() => {
       window.location.href = link.href;
-    }, 1000);
+    }, 500);
   };
 });
 
