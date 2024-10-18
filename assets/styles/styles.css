@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Power Grotesk";
-  src: url("assets/fonts/PowerGrotesk.otf") format("opentype");
+  src: url("../assets/fonts/PowerGrotesk.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -66,7 +66,7 @@ main {
   padding: clamp(3.5rem, 6rem, 8vw) 2rem 1.25rem 2rem;
   display: flex;
   gap: 1.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow-y: auto;
   flex-direction: column;
   justify-content: flex-start;
