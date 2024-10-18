@@ -2,12 +2,28 @@
 <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
   <defs>
     <style>
+      @font-face {
+        font-family: "Power Grotesk";
+        src: url("https://dris.llc/assets/fonts/PowerGrotesk.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Power Grotesk";
+        src: url("https://dris.llc/assets/fonts/PowerGrotesk.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       .cls-1, .cls-2 {
         fill: #fff;
       }
 
       .cls-2 {
-        font-family: PowerGrotesk-Regular, 'Power Grotesk';
+        font-family: "Power Grotesk", Arial, Helvetica, sans-serif;
         font-size: 67.49px;
       }
 
