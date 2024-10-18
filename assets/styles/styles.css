@@ -24,9 +24,18 @@
 
 @font-face {
   font-family: "Power Grotesk";
-  src: url("../assets/fonts/PowerGrotesk.ttf") format("truetype");
+  src: url("https://dris.llc/assets/fonts/PowerGrotesk.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Power Grotesk";
+  src: url("https://dris.llc/fonts/PowerGrotesk.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -129,7 +138,7 @@ h5,
 h6,
 span {
   /* font-family: "Inter", sans-serif; */
-  font-family: "Power Grotesk", sans-serif;
+  font-family: "Power Grotesk", "Inter", Arial, Helvetica, sans-serif;
   font-size: 1.75rem;
   line-height: 2rem;
   letter-spacing: 0.025rem;
@@ -161,7 +170,7 @@ a:hover {
 
 p,
 a {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   /* letter-spacing: -0.015em; */
   font-size: 1rem;
   line-height: 1.75rem;
