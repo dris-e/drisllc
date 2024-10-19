@@ -205,10 +205,6 @@
     </main>
   </body>
   <script>
-    if (new URLSearchParams(window.location.search).has("night")) {
-      document.body.classList.add("night");
-    }
-
     const projects = document.querySelectorAll(".proj");
     projects.forEach((project) => {
       project.addEventListener("click", () => {
@@ -217,4 +213,5 @@
       });
     });
   </script>
+  <script src="../assets/scripts/logo.js"></script>
 </html>
