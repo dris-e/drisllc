@@ -33,7 +33,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#4d5eff" />
     <meta name="geo.region" content="US-MN" />
     <meta name="geo.placename" content="Minnesota" />
 
@@ -118,7 +118,7 @@
           <div class="title">
             <p>
               <a href="/work/wip" target="_blank" rel="noopener noreferrer">Prism</a>
-              <i class="launch" data-launch="11/4/24">(Nov. 4)</i>
+              <i class="launch" data-launch="11/12/24">(Nov. 12)</i>
             </p>
           </div>
           <p class="sub">Prism is an invisible audio watermarking and tracking platform.</p>
@@ -128,7 +128,7 @@
           <div class="title">
             <p>
               <a href="/work/wip" target="_blank" rel="noopener noreferrer">PropFX</a>
-              <i class="launch" data-launch="11/12/24">(Nov. 12)</i>
+              <i class="launch" data-launch="11/25/24">(Nov. 25)</i>
             </p>
           </div>
           <p class="sub">PropFX is a trading platform that allows users to easily access capital markets.</p>
@@ -194,6 +194,7 @@
     };
 
     const playAnimation = () => {
+      document.querySelector("meta[name='theme-color']").content = "#4d5eff";
       asciiDisplay.classList.remove("opacity");
       document.body.classList.remove("background");
       document.querySelector("main").classList.add("opacity");
@@ -205,6 +206,7 @@
         document.body.classList.add("background");
         document.querySelector("main").classList.remove("opacity");
         currentFrame = 0;
+        document.querySelector("meta[name='theme-color']").content = "#ffffff";
         return;
       }
       setTimeout(playAnimation, frameRate);

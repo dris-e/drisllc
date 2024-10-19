@@ -48,12 +48,12 @@
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   transition: background-color 0.25s var(--ts);
   cursor: text;
 }
@@ -75,7 +75,7 @@ main {
   padding: clamp(3.5rem, 6rem, 8vw) 2rem 1.25rem 2rem;
   display: flex;
   gap: 1.5rem;
-  /* overflow: hidden; */
+  overflow: hidden;
   overflow-y: auto;
   flex-direction: column;
   justify-content: flex-start;
