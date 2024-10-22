@@ -113,7 +113,7 @@
           <div class="title">
             <p>
               <a href="/work/wip">LIRA</a>
-              <i class="launch" data-launch="10/23/24">(Oct. 23)</i>
+              <i class="launch" data-launch="10/24/24">(Oct. 24)</i>
             </p>
           </div>
           <p class="sub">LIRA is a Chrome extension that helps students study smarter.</p>
@@ -261,6 +261,7 @@
     const updateCount = () => {
       const now = new Date();
       const launchDate = new Date(earliestLaunch);
+      launchDate.setHours(launchDate.getHours() + 17);
       const timeDiff = launchDate.getTime() - now.getTime();
 
       if (timeDiff <= 0) {
