@@ -52,7 +52,6 @@
         "sameAs": ["https://www.linkedin.com/company/drisllc"]
       }
     </script>
-
     <style>
       .mini {
         font-size: 1.25rem;
@@ -66,11 +65,12 @@
       <div class="logo" onclick="javascript:window.location.href='/'" role="button" tabindex="0">
         <img src="assets/logos/icons/dris-llc-icon.svg" alt="dris LLC" class="icon" />
         <img src="assets/logos/icons/dris-llc-icon-2.svg" alt="dris LLC" class="hidden" aria-hidden="true" />
-        <h1>TERMS OF SERVICE</h1>
+        <h1 id="title">TERMS OF SERVICE</h1>
       </div>
       <p class="caption"><i>Last updated: November 13, 2024</i></p>
       <p>
-        We are DRIS LLC ("Company," "we," "us," "our"), a company registered in Minnesota, USA at 11500 Wayzata Blvd #1222, Minnetonka, MN, 55305.
+        We are DRIS LLC ("Company," "we," "us," "our"), <span id="company"></span> a company registered in Minnesota, USA at 11500 Wayzata Blvd #1222,
+        Minnetonka, MN, 55305.
       </p>
       <p>
         We operate the websites <a href="https://dris.llc">https://dris.llc</a>, <a href="https://lira.study">https://lira.study</a>, and
@@ -633,4 +633,5 @@
     </main>
   </body>
   <script src="assets/scripts/logo.js"></script>
+  <script src="assets/scripts/terms.js"></script>
 </html>

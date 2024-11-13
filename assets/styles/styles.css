@@ -151,7 +151,7 @@ h1 {
   font-weight: 400;
 }
 
-span {
+span:not(#company) {
   margin-top: 1rem;
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -171,6 +171,7 @@ a:hover {
 }
 
 p,
+#company,
 li,
 a {
   font-family: "Inter", Arial, Helvetica, sans-serif;
