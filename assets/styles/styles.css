@@ -171,6 +171,7 @@ a:hover {
 }
 
 p,
+li,
 a {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   /* letter-spacing: -0.015em; */
@@ -178,6 +179,24 @@ a {
   line-height: 1.75rem;
   font-weight: 300;
   color: var(--40);
+}
+
+li {
+  padding-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+ul {
+  margin-left: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+ul ul {
+  margin-left: 1.5rem;
+}
+
+.caption {
+  color: var(--73);
 }
 
 .logo {
